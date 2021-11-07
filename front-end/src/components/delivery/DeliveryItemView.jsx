@@ -29,7 +29,7 @@ class DeliveryItemView extends Component {
                         <button className="btn btn-primary mr-3" onClick={()=> {
                             const {history} = this.props;
                             history.push(`/product/${this.state.Delivery._id}`);
-                        }}> View Vehicles</button>
+                        }}> View Products</button>
                      <button className="btn btn-warning " onClick={()=> {
                             const {history} = this.props;
                             history.push(`/cost/${this.state.Delivery._id}`);

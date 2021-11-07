@@ -51,12 +51,12 @@ export default class Product extends Component {
                         <Link to="/product/Add" className="btn btn-success">Add New Product</Link>
                         <hr />
                         <div className="row">
-                            {this.state.Products.map((vehicle) => {
+                            {this.state.Products.map((product) => {
                                 return (
                                     // calling partial view
                                     <ProductItemView
-                                        key={vehicle._id}
-                                        Product={vehicle} />
+                                        key={product._id}
+                                        Product={product} />
                                 );
                             })}
                         </div>

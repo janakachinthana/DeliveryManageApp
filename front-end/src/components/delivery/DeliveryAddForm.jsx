@@ -60,6 +60,7 @@ export default class DeliveryAddForm extends Component {
         }
         axios.post(`${process.env.API_URL}delivery`, delivery)
             .then(response => {
+                window.location.reload();
                 console.log(response.data);
             });
     }

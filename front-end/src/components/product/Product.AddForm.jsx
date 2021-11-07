@@ -65,6 +65,7 @@ export default class ProductAddForm extends Component {
         // back-end calling for insert values
         axios.post(`${process.env.API_URL}product`, product)
             .then(response => {
+                window.location.reload();
                 console.log(response.data);
             });
     }
